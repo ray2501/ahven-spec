@@ -13,6 +13,8 @@ License:        ISC
 Group:          Development/Libraries
 URL:            https://www.ahven-framework.com/
 Source:         http://www.ahven-framework.com/releases/%{name}-%{version}.tar.gz
+Patch0:         ahven.gpr.gp.patch
+Patch1:         ahven_tests.gpr.patch
 BuildRequires:  gcc-ada
 BuildRequires:  make
 
@@ -52,6 +54,8 @@ developing applications that use Ahven.
 
 %prep
 %setup -q
+%patch0
+%patch1
 
 %build
 make prefix=/usr libdir=%{_libdir}

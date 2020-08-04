@@ -1,0 +1,10 @@
+--- gnat_linux/ahven.gpr.gp.orig	2020-08-04 20:01:03.709274254 +0800
++++ gnat_linux/ahven.gpr.gp	2020-08-04 20:01:25.741302394 +0800
+@@ -9,4 +9,7 @@
+    for Library_Dir      use $Libdir;
+    for Library_ALI_Dir  use $Alidir & "/ahven";
+    for Externally_Built use "true";
++   package Linker is
++      for Linker_Options use ("-lgnat", "-lgnarl");
++   end Linker;
+ end Ahven;
