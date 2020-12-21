@@ -3,10 +3,10 @@
 #
 
 %define libname libahven
-%define soname 27
+%define soname 28
 
 Name:           ahven
-Version:        2.7
+Version:        2.8
 Release:        2
 Summary:        A unit testing framework for Ada Programming Language
 License:        ISC
@@ -74,7 +74,7 @@ make check
 
 %files
 %license LICENSE.txt
-%doc README.rst ROADMAP NEWS.txt
+%doc README.md ROADMAP NEWS.txt
 
 %files devel
 %{_includedir}/*

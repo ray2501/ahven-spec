@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set base "ahven-2.7"
-set fileurl "https://www.ahven-framework.com/releases/ahven-2.7.tar.gz"
+set base "ahven-2.8"
+set fileurl "https://www.ahven-framework.com/releases/ahven-2.8.tar.gz"
 
 set var [list wget $fileurl -O $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var
